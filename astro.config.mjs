@@ -1,16 +1,6 @@
-import { defineConfig } from "astro/config";
-import node from "@astrojs/node";
-import clerk from "@clerk/astro";
-import react from "@astrojs/react";
-import dotenv from "dotenv";
-
-// Load environment variables from .env file
-dotenv.config();
+import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-	integrations: [clerk(), react()],
-	adapter: node({
-		mode: "standalone",
-	}),
-	output: "server",
+  site: 'https://raduandreigorcea.github.io',
+  base: '/Vantage-Landing-Page',
 });
